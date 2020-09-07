@@ -1,221 +1,288 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <meta charset="UTF-8">
+
 	
+
     <title>Document</title>
+
     <style>
+
          .body{width: 100%;margin:0;padding:0}
+
         *{margin:0}
 
+
+
         .box{
+
             width: 1204px;
+
             height:1000px;
+
             margin:auto;
+
             overflow: hidden;
+
         }
+
         .left{ 
+
           
+
             margin-top: 20px;
+
             border: 1px solid gray;
+
             width:1000px ;
+
             height: 800px;
+
             float:left;
+
           
+
         }
+
         .right{ 
+
               border: 1px solid gray;
+
             width:200px ;
+
             float:right;
+
           
+
             height: 800px;
+
             margin-top: 20px;
+
         }
+
         .l_left{     
+
              width: 450px;height:800px;float:left;}
+
     
+
         .Bigimg{   margin-top: 20px;
+
             margin-left: 20px;
+
             width: 430px;
+
             height: 400px;
+
             float: left;
+
         background: salmon;
+
         }
+
         .imgsql{   margin-top: 20px;
+
             margin-left: 20px;
+
             width: 430px;
+
             height: 50px;
+
             float: left;
+
     
+
         }
+
         .smimg{
+
             width:50px;
+
             height:50px;
+
             float: left;
+
           
+
             margin-left: 10px;
+
         }
+
         .l_right {margin-right: 25px;width: 500px;height:800px;float:right;}
+
         .h3{margin-top: 20px; width: 500px;height: 80px; }
 
+
+
        .JiaGe{ width: 500px;height: 100px;float: left;background-color:#f5db85
+
             
+
         }
+
        
+
         .TBJ
+
         .r_top{width: 100%;height: 300px;margin-top: 20px;border-bottom: 1px solid rgb(128, 128, 128);}
+
          
+
         .r_bottom{width: 150px;height: 200px;position: relative; }
 
+
+
         .father{display: flex;}
+
         .child{flex:1;text-align:center;padding:5px;border-right:1px dotted #000}
+
         .child:last-child{border-right:0}
+
         .c_top{font-size: 14px;color:#666;margin-bottom:3px;}
+
         .c_bottom{color:rgb(50, 53, 56);font-weight:700}
+
         .icon{display: inline-block;width: 15px;height: 15px;background:url(./1.png)no-repeat center;background-size: contain;}
+
         .wuliu .c_bottom{color:red}
+
         .wuliu .c_bottom p{color:green!important}
+
      
+
         .wrapper {
+
    
+
          display: grid;
+
                   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
           grid-template-rows: 50px 50px;
+
           grid-gap: 10px;
+
 }
+
         .peisong.l_right{
+
             width:500px;height: 50px;float:left
+
         }
+
         .pbottom.peisong.l_right{
+
             width: 80px;margin-left: 20px;
+
         }
 
 
-        div.originalDiv{
-
-margin-top: 5px;
-
-}
-
-
-
-span.originalPriceDesc{
-
-color:#999999;
-
-display: inline-block;
-
-width: 68px;
-
-}
-
-
-
-span.originalPrice{
-
-font-family: Arial;
-
-font-size:12px;
-
-color: #333333;
-
-text-decoration: line-through;
-
-}
-
-span.promotionPriceYuan{
-font-family: Arial;
-font-size:18px;
-color: #c40000;
-}
-span.promotionPrice{
-
-color: #c40000;
-
-font-family: Arial;
-
-font-size:30px;
-
-font-weight: bold;
-
-}
-
-
-
-span.promotionPriceDesc{
-
-color:#999999;
-
-display: inline-block;
-
-width: 68px;
-
-position: relative;
-
-left: 0px;
-
-top:-10px;
-
-}
-span.promotionpricetip{
-    background-color: darkorange;
-    width: 50px;
-    position: 
-    left: 0px;
-    top: 0px;
-
-}
 .jiaoyipinglun{
+
   float: right;  width: 80px; height:80px; background-color: #ecd968; 
+
 }
+
 .leijipinglun{ 
+
     float: right; width: 80px; height:50px;background-color: cyan
+
 }
+
 .shoucang{
+
  width: 200px;height: 50px;margin-left: 20px;
+
 }
+
 .l_right.peisong{
+
    display: flex; width: 100%; height: 50px;position: relative;background-color: black;
+
 }
+
+
 
 .HG{
-    width: 100%;height: 100px;background: -webkit-linear-gradient(#fae77d,white,#fae77d);
+
+    width: 200px;height: 100px;background: -webkit-linear-gradient(#fae77d,white,#fae77d);
+
 }
+
 .maijia{
+
     height: 50px;display: flex;
+
 }
+
 .hgmaijia{
+
     width: 100%;align-self:center; text-align: center; color: goldenrod;
+
 }
+
 .strong{
+
     margin-top: 10px;
+
 }
+
 .LD{
+
     height: 30px;display: flex;
+
 }
+
 .laodian{
+
     width: 100%;align-self:center; text-align: center; color: goldenrod;display: inline-block;
+
 }
+
+
 
 .lineleft{
+
     position: absolute;
 
+
+
             top: 45px;
+
             right: 190px;
+
             background:goldenrod;
+
+
 
             content: "";
 
+
+
             height: 1px;
+
+
 
             width: 35px;
 
+
+
         }
+
 .lineright{
+
     position: absolute;
 
+
+
 top: 45px;
+
 right: 292px;
+
 background:goldenrod;
 
 content: "";
@@ -225,385 +292,497 @@ height: 1px;
 width: 35px;
 
 }
+
 .xinxi{
+
   width: 150px;height: 150px;  position: relative;margin: 20px;
+
 }
+
 .youxiu{
+
     text-align: center;
+
 }
+
 .peisong{
 
+
+
     width: 100%;height: 50px;position: relative;top: 15px;
+
 }
+
 .chima{
+
     width: 100%;height: 50px;position: relative;
+
     border-top:  gray 1px solid ;
+
 } 
-
-
 
 div.productNumber{
 
+
+
 color:#999999;
-
 }
 
-
-
-
-
-span.productNumberSettingSpan{
-
-border: 1px solid #999;
-
-display: inline-block;
-
-width: 43px;
-
-height: 32px;
-
-padding:7px 0;
-
-}
-
-
-
-
-input.productNumberSetting{
-
-border: 0px;
-
-height: 80%;
-
-width: 80%;
-
-}
-
-span.updown img{
-
-display:inline-block;
-
-vertical-align:top;
-
-}
-
-span.glyphicon{
-
-font-size: 6px;
-
-}
-span.updown{
-
-border: 1px solid #999;
-
-display: block;
-
-width: 20px;
-
-height: 14px;
-
-text-align: center;
-
-padding-top:4px;
-
-}
-
-span.updownMiddle{
-
-height: 4px;
-
-display: block;
-
-}
-
-span.arrow{
-
-display: inline-block;
-
-width: 22px;
-
-height: 32px;
-
-vertical-align:top;
-
-}
 .demo{
+
     display: flex;
+
 }
+
 .watching{
+
     width: 180px;height: 200px;margin: 1px;border: tomato 1px solid;
+
 }
+
+
+.btn{ padding:3px;border:1px solid;cursor:pointer;width:90px;height:50px;text-align:center; margin-left: 5px;} 
+
+.fenqi{
+margin-left: 65px;
+}
+.shuliang{
+    width: 400px;
+}
+.kucun{
+    display: inline;position: relative;left: 35px;
+}
+
 
     </style>
 
+
+
 </head>
+
 <body>
 
+
+
     <div class="one"></div>
+
     <div class="two"></div>
+
     <div class="box"> 
+
         <div class="left"> 
+
             <div style="position: absolute; top: 7px;left: 1100px;background-color: white;">举报</div>
+
             <div class="l_left">
+
         
+
                 <div class="Bigimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材1.JPG" style="height: 100%;width: 100%;">
+
                 </div>
+
                 <div class="imgsql">
+
                 <div class="smimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材2.JPG" style="height: 100%;width: 100%;">
+
                 </div><div class="smimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材3.JPG" style="height: 100%;width: 100%;">
+
                 </div>
+
                 <div class="smimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材4.JPG" style="height: 100%;width: 100%;">
+
                 </div>
+
                 <div class="smimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材5.JPG" style="height: 100%;width: 100%;">
+
                 </div>
+
                 <div class="smimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材8.JPG" style="height: 100%;width: 100%;">
+
                 </div>
+
                 <div class="smimg">
+
                     <img src="C:\Users\周锡斯\Desktop\素材\素材9.JPG" style="height: 100%;width: 100%;">
+
                 </div>
+
                 </div>
+
       
+
             <div class="shoucang">
+
                 <div style="margin-top: 0px;margin-left:10px">
+
                     <p style="color:#F00; float: left;">&#9733;</p><small >收藏宝贝(46744人气)</small></div>
+
             </div>
+
         </div>
+
               
+
             <div class="l_right">
+
      
+
                 <div class="h3">
+
                     <h3>
+
                         蛋蛋肖显瘦过膝弹力靴后系带SW5050细跟高跟长筒靴长靴女靴骑士靴 
+
                 </div>
+
                 
+
                 <div class+="demo" style="background-color: #f5db85;color:#f5db85">
+
                 <div class="originalDiv" style="background-color: #f5db85;color:#f5db85" >
 
+
+
                     <small class="originalPriceDesc" >价格</small>
+
                     <div style="float:right"width:50px;heigth：50px；margin-left:10px;> 
+
                         <div class="child" >
+
                             <div class="c_top">
+
                                 <strong>2</strong> 
+
                             </div>
+
                             <div class="c_bottom" style="text-align: center;background-color: #f5db85">
+
                                 <small>交易成功</small>
+
                             </div>
+
                         </div>
+
                 </div>
+
                 <div style="float:right;background-color: #f5db85;"> 
+
                     <div class="child" >
+
                         <div class="c_top" >
+
                            <strong>1</strong> 
+
                         </div>
+
                         <div class="c_bottom" >
+
                             <small>累积销售</small>
+
                         </div>
+
                     </div>
+
                     </div>
+
                 </div>
+
             </div>
+
+
 
                     <span class="originalPriceYuan"style="background-color: #f5db85;">￥</span>
 
+
+
                     <span class="originalPrice" style="background-color: #f5db85;">998</span>
+
     
+
       
+
                 <div class="promotionDiv"style="background-color: #f5db85;">
+
+
 
                     <small class="promotionPriceDesc"style="background-color: #f5db85;">淘宝价 </small>
 
+
+
                     <span class="promotionPriceYuan" style="background-color: #f5db85;">¥</span>
 
+
+
                     <span class="promotionPrice" style="background-color: #f5db85;">268.00 </span>
+
                         <span class="promotionpricetip" style="background-color: #f5db85;">优惠促销</span>
+
                         
+
                 </div>
+
+
 
                 <div class="peisong">
 
+
+
                     <span class=""> 
+
                       配送
+
                     </span>
+
                     <span style="position: relative;left: 20px;">重庆</span>
+
                     <span style="position: relative;left: 20px;">至</span>
+
                     <a style="position: relative;left: 22px;"><button ><span></span>湖北武汉</button></a>
+
                     <a style="position: relative;left: 22px;"><button ><span></span>快递 免运费</button></a>
+
                 </div>
+
+
 
                 <fieldset style="border" >   
+
                      <legend style="text-align: right;">尺码助手</legend> 
+
                     <span>尺码</span>
+
                      </fieldset>
-                <div class="fenlei">
-                <span>颜色分类</span>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                <div class="chimatu "></div>
-                </div>
 
-                <div class="jianjie">
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                <div class="jianjie"></div>
-                </div>
-          
-                <div class="PN">
-
-            <div class="productNumber">
-
-                <span>数量</span>
-
-                <span>
-
-                <span class="productNumberSettingSpan">
-
-                   <input type="text" class="productNumberSetting" value="1">
-
-                </span>
-
-
-
-                <span class="arrow">
-
-                    <a href="#" class="increaseNumber">
-
-                        <span class="updown">
-
-                            <img src="site/increase.png" alt="">
-
-                        </span>
-
-                    </a>
-
-
-
-                    <a href="#" class="decreaseNumber">
-
-                        <span class="updown">
-
-                            <img src="site/decrease.png" alt="">
-
-                        </span>
-
-                    </a>
-
-
-
-                </span>
-
-            件</span>
-
-                <span>库存66件</span>
-
-            </div>
-
-                </div>
-
-
-
-                </div>
         
+          
+<div >颜色分类:</div>
+
+<div class>
+    <button class="缩略图1"></button>
+
+    <button class="缩略图2"></button>
+
+    <button class="缩略图3"></button>
+
+        <button class="缩略图4"></button>
+        
+        <button class="缩略图5"></button>
+
+
+        <button class="缩略图6"></button>
+        <button class="janjie">浅灰色</button>
+
+
+</div>
+<div>
+    <span>数量</span><div class="kucun">
+        <button><b>-</b></button> 
+         <span><input value="1" style="width: 40px;">
+         </span><button><b>+</b></button> &nbsp 件&nbsp (库存17033件)
+        </div>
+
+</div>
+
+               <div >
+            <div>花呗分期
+            <a href="">登录</a>
+            <span>后确认是否享有该服务 </span> &nbsp 
+            <a href="">什么是分期购?</a>
+            <div class="fenqi">
+                <div class="btn" style="float: left;；"><small>￥91.38✖3期(含手续费)</small></div>
+                <div class="btn" style="float: left;"> <small> ￥46.67✖6期(含手续费)</small></div>
+                <div class="btn" style="float: left;"> <small>￥24.0✖12期(含手续费)</small> </div>
                 
                 </div>
-             
-        <div class="right">
-            <div class="r_top">
-                <div class="HG">
-                    <div class="maijia">
-                        <span class="lineright"></span>
-                       
-                        <div class="hgmaijia"> <strong > 皇冠卖家 </strong> </div>
-                        <span class="lineleft"></span>
-                    </div>
-                    <div class="LD">
-                        <div class="laodian">
-                           <img src="C:\Users\周锡斯\Desktop\素材\店.png" style="position: absolute; top:76px;right: 295px;">
-                            <strong> 8年老店</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="xinxi">
-                    <strong class="youxiu">蛋蛋肖很优秀</strong>
-                    <div></div>
-                    <span>信誉：</span><img src="C:\Users\周锡斯\Desktop\素材\信誉.png"><div></div>
-                    <span>掌柜：琪潇潇</span><div></div>
-                    <span>联系：</span><img src="C:\Users\周锡斯\Desktop\素材\和我联系.png"><div></div>
-                    <span>资质：</span><img src="C:\Users\周锡斯\Desktop\素材\资质.png"><div></div>
+            </div>
+            </div>
+
+
+
+
+
+           </div>
 
                 </div>
-                <div class="father">
-                    <div class="child">
-                        <div class="c_top">
-                            <small>描述</small>
-                        </div>
-                        <div class="c_bottom">
-                            <small>4.8 <div class="icon"></div></small><img src="C:\Users\周锡斯\Desktop\素材\上箭头.png" style="position:absolute; top: 342px;right: 300px;">
-                        </div>
+      
+
+             
+
+        <div class="right">
+
+            <div class="r_top">
+
+                <div class="HG">
+
+                    <div class="maijia">
+
+                        <span class="lineright"></span>
+
+                       
+
+                        <div class="hgmaijia"> <strong > 皇冠卖家 </strong> </div>
+
+                        <span class="lineleft"></span>
+
                     </div>
-                    <div class="child">
-                        <div class="c_top">
-                            <small>服务</small>
+
+                    <div class="LD">
+
+                        <div class="laodian">
+
+                           <img src="C:\Users\周锡斯\Desktop\素材\店.png" style="position: absolute; top:76px;right: 295px;">
+
+                            <strong> 8年老店</strong>
+
                         </div>
-                        <div class="c_bottom">
-                                 <small style="color:green">4.8 <i class="icon"></i></small>
-                                 <img src="C:\Users\周锡斯\Desktop\素材\下箭头.png" style="position: absolute;top: 341px; right: 232px;">
-                        </div>
+
                     </div>
-                    <div class="child wuliu">
-                        <div class="c_top">
-                          <small>物流</small>  
-                        </div>
-                        <div class="c_bottom">
-                            <small style="color:green">4.8 <i class="icon"></i></small>
-                            <img src="C:\Users\周锡斯\Desktop\素材\下箭头.png" style="position: absolute;top: 341px; right: 163px;">
-                        </div>
-                    </div>
+
                 </div>
+
+                <div class="xinxi">
+
+                    <strong class="youxiu">蛋蛋肖很优秀</strong>
+
+                    <div></div>
+
+                    <span>信誉：</span><img src="C:\Users\周锡斯\Desktop\素材\信誉.png"><div></div>
+
+                    <span>掌柜：琪潇潇</span><div></div>
+
+                    <span>联系：</span><img src="C:\Users\周锡斯\Desktop\素材\和我联系.png"><div></div>
+
+                    <span>资质：</span><img src="C:\Users\周锡斯\Desktop\素材\资质.png"><div></div>
+
+
+
+                </div>
+
+                <div class="father">
+
+                    <div class="child">
+
+                        <div class="c_top">
+
+                            <small>描述</small>
+
+                        </div>
+
+                        <div class="c_bottom">
+
+                            <small>4.8 <div class="icon"></div></small><img src="C:\Users\周锡斯\Desktop\素材\上箭头.png" style="position:absolute; top: 342px;right: 300px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="child">
+
+                        <div class="c_top">
+
+                            <small>服务</small>
+
+                        </div>
+
+                        <div class="c_bottom">
+
+                                 <small style="color:green">4.8 <i class="icon"></i></small>
+
+                                 <img src="C:\Users\周锡斯\Desktop\素材\下箭头.png" style="position: absolute;top: 341px; right: 232px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="child wuliu">
+
+                        <div class="c_top">
+
+                          <small>物流</small>  
+
+                        </div>
+
+                        <div class="c_bottom">
+
+                            <small style="color:green">4.8 <i class="icon"></i></small>
+
+                            <img src="C:\Users\周锡斯\Desktop\素材\下箭头.png" style="position: absolute;top: 341px; right: 163px;">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
                
+
             <div style="position: relative;border-bottom:goldenrod 1px solid;">
+
+
 
                 <a><button style="margin: 10px 20px 10px 10px;background: white;border: solid 1px;">进入店铺</button></a>
 
+
+
                 <a><button style="background: white;border: solid 1px;"><span></span>收藏店铺</button></a>
 
+
+
             </div>
+
             <div class="r_bottom">
+
                 <div style="margin: 10px;">
+
                     <strong>看了又看</strong>
+
                 <img src="C:\Users\周锡斯\Desktop\素材\刷新.png" style="position:relative;left: 80px;top: 5px;">
+
                 <div class="watching"></div>
+
                         <img src=""C:\Users\周锡斯\Desktop\素材\看了又看1.png" >
+
                 </div>
+
                 </div>
+
         
+
                 
+
             </div>
+
         </div>
+
+
 
       <div style="clear: both;"></div>
+
         </div>
+
            
+
         </>
+
     </div>
 
+
+
 </body>
+
 </html>
