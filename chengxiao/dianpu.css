@@ -1,0 +1,111 @@
+.laodian {
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    background-image: url(image/TB1sJynGXXXXXbwXXXXQGvsIVXX-198-30.png);
+    color: rgb(255, 128, 64);
+}
+
+.laodian img {
+    margin-top: 2px;
+}
+
+.dinapu_message {
+    margin: 25px 15px;
+}
+
+.dinapu_msg {
+    display: flex;
+    margin-top: 10px;
+}
+
+.dinapu_font {
+    flex: 1;
+    color: #666;
+}
+
+.xingyu_details, .zizhi_details {
+    flex: 2;
+}
+
+.xingyu_details .image {
+    height: 100%;
+    width: 70px;
+    background-image: url(image/T15AD7FFFaXXbJnvQ_-130-60.gif);
+}
+
+.zizhi_details img {
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+}
+
+.zizhi_details span {
+    border: solid;
+    border-color: seagreen;
+    border-width: 1px;
+    font-size: 2px;
+}
+
+shangping_details {
+    overflow: hidden;
+}
+
+.shangping_one {
+    height: 100px;
+    width: 80px;
+    margin: 0px 10px;
+    float: left;
+}
+
+.shangping_image {
+    height: 80%;
+    width: 100%;
+    /* background-image: url(); */
+}
+
+.shangping_image img {
+    height: 100%;
+    width: 100%;
+}
+
+.shangping_price {
+    color: rgba(255, 128, 64, 1);
+}
+
+.c_dianpu {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.c_dianpu button {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: rgba(111, 111, 111, 0.3);
+}
+
+.tuijian {
+    margin: 0px 10px 10px;
+}
+
+.lookAndlook, .shuaxin {
+    height: 50px;
+    line-height: 70px
+}
+
+.r_bottom {
+    border: 1px solid rgba(111, 111, 111, 0.3);
+    border-top: 0
+}
+
+.tuijian {
+    display: flex;
+}
+
+.lookAndlook {
+    flex: 3;
+}
+
+.shuaxin {
+    flex: 1;
+}

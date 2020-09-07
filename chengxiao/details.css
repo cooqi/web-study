@@ -1,0 +1,217 @@
+/* 商品信息区域 */
+
+.commoditytitle {
+    margin: 5px;
+    color: #333;
+}
+
+.c_price {
+    display: flex;
+    color: #666;
+    margin: 20px 20px 10px 20px;
+    background-color: rgba(222, 111, 111, 0.1);
+}
+
+.price {
+    flex: 5;
+}
+
+.history_price, .taobao_price {
+    flex: 2;
+    display: flex;
+    margin: 10px;
+}
+
+.price_font {
+    flex: 1.5;
+}
+
+.price_number {
+    flex: 5;
+    text-decoration: line-through;
+}
+
+.taobao_price_number {
+    font-size: 25px;
+    color: #FF3333;
+    flex: 5;
+}
+
+.history_data {
+    flex: 2;
+    display: flex;
+    text-align: center;
+}
+
+.comment, .deal {
+    flex: 1;
+}
+
+.comment {
+    border-right: solid;
+    border-color: rgba(111, 111, 111, 0.1);
+    border-width: 1px;
+}
+
+.youhui {
+    background-color: rgba(255, 128, 64, 1);
+    font-size: 17.5px;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.taobao_font {
+    line-height: 35.97px
+}
+
+.sort_font {
+    line-height: 40px;
+    margin-left: 8px;
+}
+
+.p_peisong {
+    margin-left: 22px;
+}
+
+.p_peisong, .c_chicun, .c_color, .c_number, .c_fenqi, .c_buy, .c_chengnuo, .c_zhifu {
+    display: flex;
+    color: #666;
+    margin-top: 10px;
+}
+
+.peisong, .chicun, .sort_font, .number_font, .chengnuo_font, .zhifu_font {
+    flex: 1.5;
+    margin-left: 8px;
+}
+
+.address, .chicun_number, .sort_color, .number_details, .fenqi_details, .chengnuo_details, .zhifu_details {
+    flex: 7;
+    color: #666;
+}
+
+.c_canshu {
+    border-top: solid;
+    border-color: rgba(111, 111, 111, 0.1);
+    border-width: 1px;
+    margin: 10px 20px;
+    padding-top: 10px;
+}
+
+.c_chicun, .c_color, .c_number, .c_fenqi, .c_zhifu {
+    display: flex;
+}
+
+.chicun {
+    margin-left: 9px;
+    margin-bottom: 18px;
+}
+
+.chicun_number button, .sort_color button, .fenqi_details button, .c_buy button {
+    margin-left: 5px;
+    margin: 3px;
+    border: solid;
+    border-color: rgba(111, 111, 111, 0.81);
+    border-width: 1px;
+}
+
+.chicun_number button {
+    background-color: rgb(255, 255, 255);
+}
+
+.sort_color button {
+    width: 40px;
+    height: 40px;
+}
+
+.image1 {
+    background-image: url(image/O1CN01ckFCd31Xq8UobH81B_!!2200782042974.jpg_40x40q90.jpg);
+}
+
+.image2 {
+    background-image: url(image/O1CN01ckFCd31Xq8UobH81B_!!2200782042974.jpg_40x40q90.jpg);
+}
+
+.image3 {
+    background-image: url(image/O1CN01ckFCd31Xq8UobH81B_!!2200782042974.jpg_40x40q90.jpg);
+}
+
+.image4 {
+    background-image: url(image/O1CN01ckFCd31Xq8UobH81B_!!2200782042974.jpg_40x40q90.jpg);
+}
+
+.c_number {
+    margin-top: 15px;
+}
+
+.number_details input {
+    width: 50px;
+}
+
+.number_details {
+    font-size: 13px;
+}
+
+.c_fenqi {
+    margin: 15px 8px;
+}
+
+.fenqi_details {
+    margin-left: 15px;
+}
+
+.fenqi_details button {
+    width: 100px;
+    background-color: #FFFFFF;
+    color: rgb(200, 200, 200);
+    margin-top: 10px;
+}
+
+.fenqi_details a {
+    color: #666;
+    border-bottom-style: dashed;
+    border-width: 1px;
+}
+
+.c_buy {
+    margin-top: 40px;
+}
+
+.c_buy .buy_now {
+    width: 180px;
+    height: 40px;
+    background-color: rgba(255, 128, 64, 0.3);
+    color: rgba(255, 128, 64, 1);
+    border-color: rgba(255, 128, 64, 0.5);
+}
+
+.c_buy .plus_car {
+    width: 180px;
+    height: 40px;
+    background-color: rgb(255, 128, 64);
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 128, 100);
+}
+
+.chengnuo_details img {
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.chengnuo_font, .zhifu_font {
+    line-height: 25px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.c_chengnuo, .c_zhifu {
+    margin-top: 30px;
+}
+
+.zhifu_details span {
+    margin-right: 10px;
+}
+
+.icon-shuaxin {
+    font-size:30px;
+}

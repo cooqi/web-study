@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+}
+
+.big_image img {
+    width: 100%;
+}
+
+.c_image {
+    text-align: right;
+}
+
+.images_one {
+    float: left;
+    margin-right: 12px;
+}
+
+.images_one img {
+    width: 95px;
+}
+
+.images_one:hover {
+    border: 2px solid rgba(255, 128, 64, 0.8);
+}
+
+.images {
+    overflow: hidden;
+    margin: 10px;
+    height: 111px;
+}
+
+.shouchang {
+    color: #999;
+    margin-left: 20px;
+    text-align-last: left;
+}
+
+.c_shouchang {
+    cursor: pointer;
+}
+
+.c_shouchang:hover {
+    color: coral;
+}
