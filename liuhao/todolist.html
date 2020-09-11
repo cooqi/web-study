@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoList</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div id="todoList">
+        <form v-on:submit.prevent="submit">
+          <input v-model="todoText">  
+          <button>添加</button>
+        </form>
+        <input v-model="searchText">
+        <button v-on:click="search">查询</button>
+        <ul>
+            <li v-if="isShow(index)" v-for="(todo,index) in todos" >
+                {{todo.id}}-{{todo.name}}
+                
+                
+                <input type="text" class="t_name" v-model="todo.name">
+                
+                <button v-on:click="todos.splice(index,1)">删除</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+
+        new Vue({
+            el: "#todoList",
+            data:{
+                todoText:'',
+                todos:[
+                    {id:1,name:'aaaaa'},
+                    {id:2,name:'bbbbb'},
+                    {id:3,name:'aaabb'},
+                    {id:4,name:'bbbaa'},
+                ],
+                nextTodosId:'5',
+                searchText:"",
+            },
+            methods:{
+                submit: function(){
+                    this.todos.push({id:this.nextTodosId++,name:this.todoText})
+                    this.todoText = "";
+                },
+                search:function(){
+                    console.log(this.searchText);
+                },
+                isShow: function(index){
+                    console.log(index);
+                    var reg = new RegExp(this.searchText);
+                    return reg.test(this.todos[index].name);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
