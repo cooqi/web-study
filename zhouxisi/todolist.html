@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>todoList</title>
+    <script src="vue.js"></script>
+    <style>
+.todo{
+    width:100%;
+    height: 700px;
+    background-color: gray; 
+  text-align: center;
+  }
+.header{
+    width: 100%;
+    height:100px;
+    background-color: rgb(55, 55, 55);
+}
+.h1{
+    font-size: 48px;
+    color: white;
+}
+.input{
+    width: 200px;
+    text-align: center;
+    position: relative;
+    bottom:40px;
+}
+.h2{
+    font-size: 32px;
+    position: relative;
+    bottom: 30px;
+    right: 160px;
+}
+.number{
+    position: relative;
+    bottom: 30px;
+}
+.todolist{
+    font-size: 16px;
+    position: relative;
+    bottom:50px;
+    
+}
+.destroy{
+  width:60px;
+  height: 25px;
+  position: relative;
+  left: 160px;
+  top:10px
+ 
+}
+.list{
+    width: 300px;
+    height: auto;
+ position: relative;
+ left: 580px;
+ text-align: left;
+}
+   
+   
+.check{
+ position: relative;
+    display: inline;
+    top: 15px;
+    right:5px;
+}
+.item{
+    font-size: 24px;
+    position: relative;
+   
+}
+.clear{
+
+}
+    </style>
+</head>
+<body>
+    <div id="todo" class="todo">
+        <div class="header">
+            <h1 class="h1">todoList</h1>
+            <input class="input" type="text" 
+            v-model="inputValue"
+             v-on:keyup.enter="Submit"
+             placeholder="input todo,submit by enter"
+             />   
+             <P class="number">todoNumber：{{this.length}}</P>
+        </div>
+        <h2 class="h2">todo:</h2>
+        <ul class="todolist">
+            <todo-list v-for="(item,index) in list"
+                :key="index"
+                :content="item"
+                :index="index"
+                @delete="Delete">    
+              
+            </todo-list>
+          
+            <footer><button class="clear" @click="clearData()">clear todo</button></footer>
+
+
+</div>
+<script>
+
+    new Vue({
+        el:"#todo",
+        data:{
+            inputValue:'',
+            list:[
+            ],
+            length:'0',
+
+        },
+        methods:{
+            Submit:function(){
+                if(this.inputValue == ""){
+                    alert("Please input todo");
+                    return
+                };
+                this.list.push(
+                this.inputValue,
+                );
+                this.inputValue = '';
+                this.length++;
+            },
+            Delete:function(index){
+                this.list.splice(index,1);
+                this.length--;
+            },
+            clearData () {
+             localStorage.clear()
+             this.list = []
+             this.length = 0
+            },
+        }
+    })
+    Vue.component('todo-list',{
+        props:['content','index'],
+        template:'<div class="list"><input class="check"  type="checkbox"  v-bind="content"><label class="check" for="checkbox">已完成{{ checked }}</label><button class="destroy" @click="Click"> delete</button><p style="item">{{content}}</p>  </div>' ,
+        methods:{                                                                                         
+            Click:function(){
+                this.$emit('delete',this.index);
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
