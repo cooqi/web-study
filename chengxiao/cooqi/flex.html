@@ -6,9 +6,17 @@
     <title>Document</title>
     <style>
         
-        .demo{display: flex;flex-wrap: wrap;width: 342px;background: palegoldenrod;justify-content: space-between;}
-        .demo *{box-sizing: border-box;}
-        p{min-width: 85px;margin-right: 20px;}
+        .demo{display: flex;flex-wrap: wrap;width: 400px;background: palegoldenrod;}
+        p{min-width: 85px;
+        margin-right: 20px;  
+        background: pink;}    
+        .demo:after{            
+            /*对最后一个伪元素进行最大限度伸缩*/            
+            content: ' ';            
+            flex-grow: 999999999999999999999999999999999999;        
+        }        
+        p:nth-child(4n){margin-right: 0;}
+
         
     </style>
 </head>
@@ -17,7 +25,7 @@
         <p><input type="checkbox" value="1">12</p>
         <p><input type="checkbox" value="1">123</p>
         <p><input type="checkbox" value="1">123</p>
-        <p><input type="checkbox" value="1">123456</p>
+        <p><input type="checkbox" value="1">123</p>
         <p><input type="checkbox" value="1">123</p>
         <p><input type="checkbox" value="1">123</p>
         <p><input type="checkbox" value="1">1234</p>
