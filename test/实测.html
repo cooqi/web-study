@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        .box{margin-bottom: 10px;}
+        .box h1{line-height: 60px;}
+        .demo1{overflow: hidden;color: #fff;font-size: 20px;}
+        .demo1 div{height: 300px;}
+        .demo1 .left{width: 200px;float: left;background: red;}
+        .demo1 .right{width: 200px;float: right;background: blue;}
+        .demo1 .mian{padding: 0 200px;background: cadetblue;}
+        .demo2 dl{overflow: hidden;}
+        .demo2 dl dd{float: left;display: flex;align-items: center;border-right: 1px #ccc dashed;padding: 10px;text-align: center;}
+        .demo2 dl dd i{display: inline-block;width: 20px;height: 20px;background: url('./icon.svg')no-repeat;background-size: contain;margin-right: 10px;}
+        .demo2 dl dd:last-child{border-right: 0;}
+        .demo2 dl dd span{color: green;font-weight: 700;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>一、布局</h1>
+        <div class="demo demo1">
+            <div class="left">
+                left-200px
+            </div>
+            <div class="right">
+                right-200px
+            </div>
+            <div class="mian">
+                main-auto
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <h1>二、细节还原</h1>
+        <div class="demo demo2">
+            <dl>
+                <dd>
+                    <i></i>
+                    <ul>
+                        <li>价格</li>
+                        <li>12.00 <span>元</span></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <i></i>
+                    <ul>
+                        <li>销量</li>
+                        <li>50 <span>件</span></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="box">
+        <h1>三、比大小</h1>
+        <div class="demo demo3">
+            <h3>[1,2,3,4,5,5]</h3>
+            <p>输出结果为5</p>
+        </div>
+    </div>
+</body>
+</html>
